@@ -1,6 +1,6 @@
 //https://v6.exchangerate-api.com/v6/1fbc43e81a1a0b8369e8bf2e/latest/USD
 
-const apiKey = '1fbc43e81a1a0b8369e8bf2e';
+const apiKey = '1bf671ca24eab88243267a2d';
 const apiUrl = 'https://v6.exchangerate-api.com/v6/';
 
 let fromCurrency = 'RUB';
