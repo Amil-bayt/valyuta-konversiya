@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+#internetsiz {
+    margin-top: 100px;
+    display: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.head {
+    background-color: #F5F5F6;
+    height: 50px;
+    font-weight: 500px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    margin-top: 56px;
+    margin-right: 145px;
+}
+
+.bank {
+    width: 89px;
+    height: 23px;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.mid p {
+    margin: 17px 21px 14px;
+    color: #959BA4;
+}
+
+.last {
+    width: 58px;
+    height: 33px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin-top: 9px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    /* margin: auto; */
+    width: 100%;
+}
+
+.converter {
+    display: flex;
+    gap: 50px;
+}
+
+.buttons1,
+.buttons2 {
+    display: flex;
+    gap: 0;
+}
+
+.buttons1 button,
+.buttons2 button {
+    width: 65px;
+    height: 30px;
+    color: #959BA4;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buttons1 button:first-child,
+.buttons2 button:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.buttons1 button:last-child,
+.buttons2 button:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.box1,
+.box2 {
+    width: 259px;
+    height: 102px;
+    border-radius: 3px;
+    border-width: 1px;
+    margin-top: 20px;
+    border: 1px solid #959BA4;
+    border-radius: 3px;
+}
+
+.converter {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1p,
+.div2p {
+    color: #959BA4;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.number1,
+.number2 {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 36px;
+}
+
+/* media */
+
+/* Tablet (maksimum 1024px) */
+@media (max-width: 1024px) {
+    .h1 {
+        font-size: 30px;
+        margin: 30px 0 20px;
+        text-align: center;
+    }
+
+    .converter {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .box1,
+    .box2 {
+        width: 300px;
+    }
+
+    .buttons1 button,
+    .buttons2 button {
+        width: 60px;
+        font-size: 14px;
+    }
+}
+
+/* Telefon (maksimum 600px) */
+@media (max-width: 600px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .mid {
+        flex-direction: column;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .mid p {
+        margin: 3px 0;
+    }
+
+    .last {
+        margin: 10px 0;
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .h1 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    .converter {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .box1,
+    .box2 {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .buttons1 button,
+    .buttons2 button {
+        width: 50px;
+        font-size: 12px;
+        height: 28px;
+    }
+
+    .div1p,
+    .div2p {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .number1,
+    .number2 {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+    }
+}
